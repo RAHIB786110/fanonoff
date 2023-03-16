@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAN ON OFF</title>
+    <script>
+        function fanClick(){
+            var btn = document.getElementById("button");
+            var img = document.getElementById("image");
+
+            btn.innerHTML = (btn.innerHTML=="FAN ON")?"FAN OFF":"FAN ON";
+
+            if(btn.innerHTML==="FAN ON"){
+                img.src = "public/images/fanoff1.JPG";
+            }if(btn.innerHTML==="FAN OFF"){
+                img.src = "public/images/fanon.gif";
+            }
+        }
+    </script>
+</head>
+<body style="display: flex; justify-content: center;align-items: center;margin-top: 30px;">
+    <div style="width: 400px;height: 400px;">
+        <img src="public/images/fanoff1.JPG" style="width:400px;height: 350px;" id="image">
+        <button id="button" onclick="fanClick()" style="width: 400px;height: 45px;">FAN ON</button>
+    </div>
+</body>
+</html>
