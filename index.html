@@ -13,7 +13,7 @@
             btn.innerHTML = (btn.innerHTML=="FAN ON")?"FAN OFF":"FAN ON";
 
             if(btn.innerHTML==="FAN ON"){
-                img.src = "public/images/fanoff1.JPG";
+                img.src = "public/images/fanoff.jpg";
             }if(btn.innerHTML==="FAN OFF"){
                 img.src = "public/images/fanon.gif";
             }
@@ -22,7 +22,7 @@
 </head>
 <body style="display: flex; justify-content: center;align-items: center;margin-top: 30px;">
     <div style="width: 400px;height: 400px;">
-        <img src="public/images/fanoff.JPG" style="width:400px;height: 350px;" id="image">
+        <img src="public/images/fanoff.jpg" style="width:400px;height: 350px;" id="image">
         <button id="button" onclick="fanClick()" style="width: 400px;height: 45px;">FAN ON</button>
     </div>
 </body>
